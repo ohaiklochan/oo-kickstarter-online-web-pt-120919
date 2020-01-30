@@ -1,3 +1,5 @@
+require 'pry'
+
 class Backer
   
   attr_accessor :name
@@ -5,6 +7,7 @@ class Backer
   @@all = []
   
   def initialize(name)
+    binding.pry
     @name = name
     @@all << self
   end
